@@ -1,3 +1,89 @@
+main {
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+}
+
+.titulo-equip {
+    margin: 30px 0 40px 0;
+}
+
+.subtitulo-titulo {
+    margin: 15px 0 20px 0;
+}
+
+.subtitulo-titulo p {
+    margin: 15px 0 15px 0;
+    color: red;
+}
+
+.principal-video iframe {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.segundo-artigo {
+    margin-top: 80px;
+}
+
+.imagem-texto {
+    margin-top: 20px;
+    display: flex;
+}
+
+.imagem-texto img {
+    width: 450px;
+    height: 400px;
+}
+
+.card-texto {
+    margin-left: 30px;
+}
+
+.tabela-equip {
+    margin-top: 20px;
+}
+
+.titulo-tabela {
+    text-align: center;
+    margin-top: 35px;
+}
+
+table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+}
+
+.botao-mais {
+    text-align: end;
+    margin-bottom: 40px;
+}
+
+.botao-mais button{
+    font-weight: bold;
+    padding: 15px;
+    border: solid 0px;
+    color: #FFFFFF;
+    background-color: gray;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: 1s;
+}
+
+
 /* RESPONSIVIDADE */
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
@@ -9,5 +95,21 @@
 }
 /* MOBILE */
 @media screen and (max-width: 767px) {
+    main {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .imagem-texto {
+        flex-direction: column;
+    }
+    .imagem-texto img {
+        width: 350px;
+    }
+    .card-imagem {
+        margin-bottom: 15px;
+    }
+    .card-texto {
+        margin: 0px;
+    }
     
 }

@@ -1,3 +1,113 @@
+main {
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.principal-sessao {
+    margin-top: 20px;
+}
+
+.titulo-formulario, .mensagem-formulario {
+    color: #FFFFFF;
+}
+
+.titulo-sessao {
+    text-align: center;
+}
+
+.formulario {
+    margin: 0 auto;
+}
+
+.formulario {
+    background-color: #111111;
+    border: 1px solid #111111;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 600px;
+}
+
+
+.titulo-formulario {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.campos-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: 5px 0px;
+}
+
+.obrigatorio-formulario {
+    text-align: center;
+}
+
+.obrigatorio-formulario {
+    margin: 10px 0px;
+    font-size: 10px;
+    color: #42FF00;
+}
+
+.mensagem-formulario {
+    margin: 10px 0px;
+}
+
+.area-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: 5px 0px;
+}
+
+.btn-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-formulario p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 20px 0px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #42FF00;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-formulario p:hover {
+    background-color: #2daa00;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.btn-formulario p {
+    background-color: #42FF00;
+}
+
+
 /* RESPONSIVIDADE */
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
