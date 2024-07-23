@@ -13,8 +13,11 @@ header {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
     font-size: 13px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 #logo {
@@ -31,6 +34,7 @@ nav {
 
 ul {
     display: flex;
+    align-items: center;
 }
 
 li {
@@ -43,7 +47,7 @@ a {
 }
 
 li > a:hover {
-    opacity: 20%;
+    opacity: 0.6;
 }
 
 nav ul li a.active {
@@ -58,6 +62,7 @@ nav ul li a {
 
 .menu-mobile {
     display: none;
+    cursor: pointer;
 }
 
 .social-media {
@@ -77,7 +82,7 @@ nav ul li a {
 }
 
 .social-media > a:hover{
-    opacity: 20%;
+    opacity: 0.6;
 }
 
 .banner {
@@ -320,6 +325,26 @@ iframe {
     .menu-mobile > img {
         width: 35px;
         height: 35px;
+    }
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.active ul li {
+        margin: 15px;
     }
     .banner {
         width: 100%;
