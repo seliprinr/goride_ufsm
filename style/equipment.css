@@ -111,5 +111,8 @@ button:hover {
     .card-texto {
         margin: 0px;
     }
+    table td, a {
+        font-size: 13px;
+    }
     
 }

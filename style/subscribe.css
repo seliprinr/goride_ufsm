@@ -119,5 +119,36 @@ textarea {
 }
 /* MOBILE */
 @media screen and (max-width: 767px) {
-    
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .formulario {
+        width: 350px;
+        border-radius: 0px;
+    }
+    .titulo-formulario {
+        font-size: 20px;
+    }
+    input {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 300px;
+        margin: 5px 0px;
+    }
+    .area-mensagem {
+        margin-top: 30px;
+    }
+    textarea {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 300px;
+        height: 100px;
+        margin: 5px 0px;
+    }
+    .anuncio-principal {
+        margin-top: 5px;
+    }
 }
