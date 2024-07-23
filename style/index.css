@@ -89,12 +89,51 @@ nav ul li a {
     width: 800px;
     height: 500px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 
-.banner > img {
+.carousel {
     width: 100%;
-    height: 500px;
+    height: 100%;
+    position: relative;
 }
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 .primeira-principal {
     width: 800px;
@@ -260,12 +299,11 @@ iframe {
     align-items: center;
 }
 
-/* RESPONSIVIDADE */
-/* DESKTOP */
+
 @media screen and (min-width: 1024px) {
     
 }
-/* TABLET */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #logo {
         width: 100px;
@@ -304,7 +342,7 @@ iframe {
         margin-top: 30px;
     }
 }
-/* MOBILE */
+
 @media screen and (max-width: 767px) {
     #logo {
         width: 100px;
@@ -346,13 +384,15 @@ iframe {
     nav.active ul li {
         margin: 15px;
     }
+
     .banner {
         width: 100%;
         height: 300px;
     }
-    .banner > img {
+    .carousel-images img {
         height: 300px;
     }
+
     .primeira-principal {
         width: 350px;
         height: 400px;
@@ -408,6 +448,7 @@ iframe {
     .lado-esquerdo {
         margin: 0;
         margin-top: 20px;
+        font-size: 12px;
     }
     .linha-divisoria2 {
         display: none;

@@ -80,44 +80,49 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
-.btn-formulario p {
+.btn-formulario button {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
     margin: 20px 0px;
     width: 300px;
     height: 40px;
+    background-color: #42FF00;
     border: 1px solid #42FF00;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.btn-formulario p:hover {
-    background-color: #2daa00;
-    color: #FFFFFF;
-    transition: 1s;
+.alert-success {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
 }
 
-.btn-formulario p {
-    background-color: #42FF00;
+.alert-success.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 
-/* RESPONSIVIDADE */
-/* DESKTOP */
 @media screen and (min-width: 1024px) {
     
 }
-/* TABLET */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
 }
-/* MOBILE */
+
 @media screen and (max-width: 767px) {
     main {
         width: 100%;
